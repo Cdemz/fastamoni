@@ -2,32 +2,145 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --color-primary-v: #3c72fc;
+  --color-primary: #7946c9;
+  --color-primary-b: #c7acf3;
+  --color-primary-a: #1f53d7;
+  --color-secondary: #707070;
+  --color-secondary-a: #f2f4f8;
+  --color-accent: #f2f4f8;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: white;
+  background: black;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.jost {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* This style for the bin like icon */
+.scene {
+  width: 130px;
+  height: 130px;
+  /* border: 1px solid #ccc; */
+  /* margin: 40px 0px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.panel {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  background: var(--color-primary);
+  border-radius: 10px;
+  /* perspective function in transform property */
+  transform: perspective(400px) rotateX(-45deg);
+}
+
+.panel2 {
+  width: 37%;
+  height: 45%;
+  background: black;
+  margin: 0px auto;
+  position: relative;
+  top: 20%;
+  /* perspective function in transform property */
+  transform: perspective(400px) rotateX(-30deg);
+}
+
+/* This is where style for the bin like icon ends */
+
+/* stylying for subscribe input  */
+.subscribe {
+  position: relative;
+  height: 140px;
+
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+
+  color: #333;
+  box-shadow: 0px 0px 60px 5px rgba(0, 0, 0, 0.4);
+}
+
+.subscribe:after {
+  position: absolute;
+  content: "";
+  right: -10px;
+  bottom: 22px;
+  width: 0;
+  height: 0;
+  border-left: 0px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #653ba7;
+}
+
+.subscribe p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  line-height: 28px;
+}
+
+.subscribe input {
+  position: absolute;
+  bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #d4d4d4;
+  padding: 10px;
+  width: 82%;
+  background: transparent;
+  transition: all 0.25s ease;
+}
+
+.subscribe input:focus {
+  outline: none;
+  border-bottom: 1px solid var(--color-primary);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    "sans-serif";
+}
+
+.subscribe .submit-btn {
+  position: absolute;
+  border-radius: 30px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 12px 25px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  right: -10px;
+  bottom: -20px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: -5px 6px 20px 0px rgba(26, 26, 26, 0.4);
+}
+
+.subscribe .submit-btn:hover {
+  background-color: #653ba7;
+  box-shadow: -5px 6px 20px 0px rgba(88, 88, 88, 0.569);
 }
