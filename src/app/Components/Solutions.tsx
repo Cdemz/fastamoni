@@ -32,7 +32,7 @@ const Solution = () => {
         ))}
       </div>
 
-      <div className=" flex flex-col lg:flex-row absolute -bottom-24  lg:-bottom-7  left-[50%] transform -translate-x-1/2  h-50 z-50   ew-[80vw] gap-5 jsustify-stretch  hbg-red-500">
+      <div className=" hidden lg:flex flex-col lg:flex-row absolute -bottom-24  lg:-bottom-7  left-[50%] transform -translate-x-1/2  h-50 z-50   ew-[80vw] gap-5 jsustify-stretch  hbg-red-500">
         {" "}
         <div data-aos="fade-left" className="text-center   grate lg:w-[40%]">
           <div className=" flex flex-col lg:flex-row gap-2">
