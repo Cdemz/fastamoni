@@ -39,13 +39,13 @@ const Question = () => {
   const faqList = faqs.map((faq) => (
     <div
       className={`border p-4 rounded shadow ${
-        openFaq === faq.id ? "bg-red-500" : "bg-[var(--color-secondary-a)]"
+        openFaq === faq.id ? "bg-gray-500" : "bg-[var(--color-secondary-a)]"
       }`}
       key={faq.id}
     >
       <div className="flex justify-between items-center gap-4">
         <h2 className="uppercase font-bold">
-          <span className="text-[var(--color-primary)]">{faq.id} </span>
+          <span className="text-[var(--color-primary)]">{faq.id}. </span>
           {faq.title}
         </h2>
         <button onClick={() => toggleContent(faq.id)} className="text-xl">

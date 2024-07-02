@@ -46,7 +46,7 @@ const LeaderBoard = () => {
             </h1>
           </div>
           <div className="text-[var(--color-secondary)] ">
-            <h2 className="mb-1 text-2xl text-black text-nowrap">
+            <h2 className="mb-1 text-2xl text-black lg:text-nowrap">
               Have any question? Give us a call
             </h2>
             <p className="text-xl">+92 666 888 0000</p>

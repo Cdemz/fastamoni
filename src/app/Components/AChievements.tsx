@@ -4,7 +4,7 @@ import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 
 const AChievements = () => {
   return (
-    <div className="bg-white text-black flex flex-col lg:flex-row gap-4 lg:p-8">
+    <div className="bg-white text-black flex flex-col lg:flex-row gap-4 lg:p-8 pt-28 z-10">
       <div className="flex flex-col gap-4 p-4">
         <div className="fbg-black flex gap-2">
           <div className="flex justify-center items-center bg-[var(--color-primary-b)]  p-2 h-[20%]">

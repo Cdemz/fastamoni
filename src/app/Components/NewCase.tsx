@@ -3,7 +3,7 @@ import { FaCar } from "react-icons/fa";
 
 const NewCase = () => {
   return (
-    <div className="bg-[var(--color-secondary-a)] flex flex-col justify-center items-center py-8 pt-36 jost relative dmt-28 ">
+    <div className="bg-[var(--color-secondary-a)] flex flex-col justify-center items-center py-8 pt-72 lg:pt-36 jost relative dmt-28 ">
       <div className="flex flex-col lg:flex-row absolute   -top-28 left-1/2 transform -translate-x-1/2  h-50 z-20 shadow-lg shadow-gray-500 w-[85vw] gap-5 justify-stretch ">
         <div className="flex gap-2 bg-white  p-4 shadow-lg shadow-gray-700">
           <div className="bg-[var(--color-primary-b)] w-[4rem] h-10 p-4 flex justify-center items-center ">
@@ -12,7 +12,7 @@ const NewCase = () => {
             </h1>
           </div>
           <div className="text-[var(--color-secondary)]">
-            <h2 className="font-bold text-2xl text-black text-nowrap">
+            <h2 className="font-bold text-2xl text-black lg:text-nowrap">
               GET PROFESSIONAL ADVICE
             </h2>
             <p className="text-xl">
@@ -30,7 +30,7 @@ const NewCase = () => {
             </h1>
           </div>
           <div className="text-[var(--color-secondary)]">
-            <h2 className="font-bold text-2xl text-black text-nowrap">
+            <h2 className="font-bold text-2xl text-black lg:text-nowrap">
               TRUSTED & PROFESSIONAL
             </h2>
             <p className="text-xl">
